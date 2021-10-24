@@ -25,6 +25,8 @@ let headline = document.getElementById('headline');
 
         }
 
+//  The click event on the refresh button removes the previous value and restart the getCaptcha function
+     
         refreshBtn.addEventListener('click', function(){
             captchaDiv.innerHTML = '';
             getCaptcha();
