@@ -20,7 +20,7 @@ let headline = document.getElementById('headline');
             paragraph.style.color = randomFontColor();
             paragraph.style.transform = rotateParagraph();
             paragraph.style.opacity = opacityParagraph();
-            paragraph.style.textTransform = BigSmall(); 
+            /* paragraph.style.textTransform = BigSmall();  */
             captchaDiv.appendChild(paragraph);
 
         }
@@ -49,7 +49,8 @@ let headline = document.getElementById('headline');
 //  the functions which defines how the paragraph will look like
 
 function randomLetter(){
-    const captchaItems = [1,2,3,4,5,6,7,8,9,0,'a','b','c','d','e','f','u','v','w','x','y','z'];
+    const captchaItems = [1,2,3,4,5,6,7,8,9,0,'a','b','c','d','e','f','u',
+    'v','w','x','y','z','A','B','C','D','E','F','U','V','W','X','Y','Z'];
     return captchaItems[Math.floor(Math.random() * captchaItems.length)];
 }
    
@@ -73,8 +74,8 @@ function opacityParagraph(){
     return opacityFont[Math.floor(Math.random() * opacityFont.length)];
 };
 
-function BigSmall(){
+/* function BigSmall(){
     const capitalLower = ["lowercase","capitalize"];
     return capitalLower[Math.floor(Math.random() * capitalLower.length)];
-};
+}; */
 
